@@ -1,0 +1,13 @@
+# This file tells Netlify how to build and deploy your site.
+# It ensures that 'yarn' is used, which matches your project's setup.
+
+[build]
+  # The command to build your site.
+  command = "yarn install && yarn build"
+  
+  # The directory that contains the built site.
+  publish = "dist"
+
+[build.environment]
+  # Specify the Node.js version to use.
+  NODE_VERSION = "18"
